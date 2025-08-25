@@ -1,4 +1,4 @@
-# Türkçe Tıbbi QA Chatbot (Generative Mistral 3B + FAISS + RAG)
+# Türkçe Tıbbi QA Chatbot & RAG Mimarisi (Generative Mistral 3B + FAISS)
 
 Bu proje, **Türkçe tıbbi soruları yanıtlayabilen bir QA chatbot** oluşturmayı amaçlamaktadır. Modern **Retrieval-Augmented Generation (RAG)** yaklaşımı kullanılarak, kullanıcı sorularına hem doğru hem de bağlama uygun yanıtlar üretilir.  
 
