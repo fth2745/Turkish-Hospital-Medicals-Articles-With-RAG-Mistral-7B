@@ -104,6 +104,6 @@ Proje üç ana modülden oluşur:
 flowchart TD
     A[Soru: Kullanıcı Girişi] --> B[Retrieval: FAISS]
     B --> C[Reranking: CrossEncoder]
-    C --> D[Generative Model: Mistral-7B]
-    D --> E[Cevap: Kullanıcıya Gönderim]
-    C --> F[Top 5 Alakalı Makale]
+    C --> D[Top 5 Alakalı Makale]
+    D --> E[Generative Model: Mistral-7B]
+    E --> F[Cevap: Kullanıcıya Gönderim]
