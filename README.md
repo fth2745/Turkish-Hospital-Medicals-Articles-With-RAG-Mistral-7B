@@ -102,8 +102,10 @@ Proje üç ana modülden oluşur:
 
 ```mermaid
 flowchart TD
-    A[Soru: Kullanıcı Girişi] --> B[Retrieval: FAISS]
-    B --> C[Reranking: CrossEncoder]
-    C --> D[Top 5 Alakalı Makale]
-    D --> E[Generative Model: Mistral-7B]
-    E --> F[Cevap: Kullanıcıya Gönderim]
+    A[Soru: Kullanıcı Girişi] --> B[Embedding Oluşturma: SentenceTransformer]
+    B --> C[Retrieval: FAISS - Top 100 Makale]
+    C --> D[Reranking: CrossEncoder - Top 10 Makale]
+    D --> E[Top 5 Alakalı Makale Seçimi]
+    E --> F[Generative Model: Mistral-7B]
+    F --> G[Cevap: Kullanıcıya Gönderim]
+
